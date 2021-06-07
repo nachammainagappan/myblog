@@ -1,8 +1,12 @@
 .page-header {
-    background-color: rgb(190, 11, 5);
+    background-color: seagreen;
     margin-top: 0;
     margin-bottom: 40px;
     padding: 20px 20px 20px 40px;
+}
+
+body {
+    background-color: honeydew;
 }
 
 .page-header h1,
@@ -22,11 +26,12 @@ h4 {
 }
 
 .date {
-    color: peru;
+    color: green;
 }
 
 .save {
     float: right;
+    background-color: seagreen;
 }
 
 .post-form textarea,
@@ -59,12 +64,12 @@ h4 {
 
 .btn-default,
 .btn-default:visited {
-    color: #C25100;
+    color: seagreen;
     background: none;
-    border-color: #C25100;
+    border-color: seagreen;
 }
 
 .btn-default:hover {
     color: #FFFFFF;
-    background-color: #C25100;
+    background-color: seagreen;
 }
