@@ -7,19 +7,16 @@
     </head>
     
     <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
-        <h1>A heading</h1>
-        <h2>A heading</h2>
-        <h3>A heading</h3>
-        <h4>A heading</h4>
-        <h5>A heading</h5>
-        <h6>A heading</h6>
+        <h1>My blog</h1>
+        {% for post in posts %}
+        <article>
+            <time>published: {{ post.published_date }}</time>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </article>
+{% endfor %}
+    </br>
         <a href="https://www.hpe.com">HPE</a>
-        <ul><li>first</li>
-            <li>first</li>
-            <li>first</li></ul>
-            <footer><nav><a href="/">Home</a></nav></footer>
-        
+        <footer><nav><a href="/">Home</a></nav></footer>
     </body>
 </html>
